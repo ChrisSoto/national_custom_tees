@@ -1,0 +1,35 @@
+{# <div class="site-notice bg-flagwhite">
+  <div class="nct-page-width text-center p-2 text-flagred">
+    dynamic site notices
+  </div>
+</div> #}
+
+<header class="shadow-md sticky top-0 z-10">
+
+  <div class="log-search bg-flagdarkblue border-b border-white">
+    <div class="nct-page-width flex justify-between items-center h-16 px-4">
+      <div class="logo font-bold uppercase text-flagred">
+        <h1>{{ site.title }}</h1>
+      </div>
+      <div class="flex flex-row items-center space-x-4">
+        <div class="text-flagwhite text-sm uppercase">Search</div>
+        <input type="text" id="search" class="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 w-64" placeholder="Search" required />
+      </div>
+    </div>
+  </div>
+
+  <div class="nav bg-slate-200">
+    <div class="nct-page-width flex justify-center items-center h-12 px-4">
+      <nav class="navbar">
+        <ul class="navbar-nav flex flex-row space-x-4 uppercase text-flagblue2">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">About</li>
+          <li class="nav-item">Contact</li>
+          <li class="nav-item">Blog</li>
+          <li class="nav-item">Shop</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+</header>

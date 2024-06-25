@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .bg-flagwhite {
+    background-color: #DEF2FF;
+  }
+  .text-flagblue {
+    color: #005EAB;
+  }
+  .text-dark {
+    color: #363636;
+  }
+}
+
+.nct-page-width {
+  @apply max-w-screen-xl mx-auto;
+}
+
+.faq-question-active {
+  @apply py-4 px-4 bg-slate-200 font-bold text-flagred;
+ 
+}
+
+.faq-question-inactive {
+  @apply py-4 px-4 bg-white text-slate-400 border border-gray-200;
+}
+
+.faq-answer-active {
+  @apply bg-slate-200 h-full overflow-y-auto p-4 pl-8;
+}
+
+.faq-answer-hidden {
+  @apply hidden;
+}

@@ -1,0 +1,18 @@
+<div id="reviews" class="flex flex-row gap-4 justify-around">
+
+  {% for review in reviews %}
+
+  <div class="review flex flex-col w-80 bg-slate-200 rounded border border-gray-200 drop-shadow-md hidden">
+    <div class="review-header flex flex-row justify-between items-center gap-4 mb-2 p-4">
+      <div class="stars text-3xl text-flagred">
+        ★★★★★
+      </div>
+      <p class="review-author font-bold text-flagdark">{{ review.author }}</p>
+    </div>
+    
+    <p class="review-text px-4 pb-4 text-flagdark">{{ review.text }}</p>
+  </div>
+
+  {% endfor %}
+
+</div>

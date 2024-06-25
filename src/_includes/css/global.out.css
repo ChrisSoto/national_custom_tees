@@ -1,0 +1,45 @@
+:root {
+  --falg-red-color: #CC3513;
+  --flag-white-color: #DEF2FF;
+  --flag-blue-color: #005EAB;
+  --flag-blue-two-color: #004680;
+  --dark-color: #363636;
+  --dark-blue: #1d2656;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-color);
+}
+
+footer {
+  margin-top: auto;
+}
+
+#banner {
+  background-color: #005EAB;
+}
+#banner img {
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(100px);
+    transition: opacity 0.5s;
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.scroll-fade-in {
+  animation: fadeIn linear;
+  animation-timeline: view();
+  animation-range: entry 0% contain 25%;
+}
+
+/*# sourceMappingURL=global.out.css.map */

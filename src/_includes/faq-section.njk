@@ -1,0 +1,45 @@
+<div id="faq-section" class="my-16 scroll-fade-in">
+  <div class="nct-page-width flex justify-center">
+
+    <div class="wrapper px-16">
+
+      <div class="content-header text-center mb-8">
+        <h2 class="text-2xl pb-2"><span class="font-bold italic text-3xl text-flagred">Frequently</span> Asked Questions</h2>
+        <p class="text-slate-500">Have questions? We've got you covered.</p>
+      </div>
+
+      <div class="faqs-section flex flex-row border-4 border-blue-950">
+        <div class="faqs-question w-1/3 flex flex-col">
+
+          {% for faq in faqSection %}
+            {% if not loop.first %}
+            <div id="{{ faq.id }}" class="faq-question faq-question-inactive cursor-pointer">
+            {% else %}
+            <div id="{{ faq.id }}" class="faq-question faq-question-active cursor-pointer">
+            {% endif %}
+              {{ faq.question }}
+            </div>
+          {% endfor %}
+
+        </div>
+
+        <div class="faqs-answer w-2/3 flex flex-col">
+
+          {% for faq in faqSection %}
+
+            {% if not loop.first %}
+            <div id="{{ faq.id }}" class="faq-answer faq-answer-hidden">
+            {% else %}
+            <div id="{{ faq.id }}" class="faq-answer faq-answer-active">
+            {% endif %}
+              {{ faq.id }}{{ faq.answer }}
+            </div>
+          {% endfor %}
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

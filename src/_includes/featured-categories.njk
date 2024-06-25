@@ -1,0 +1,18 @@
+<div id="featured-categories" class="mt-4 mb-8">
+  <div class="nct-page-width px-4 xl:px-0">
+
+    <div class="flex flex-row space-x-4 justify-center">
+
+      {% for category in productCategories %}
+
+      <div class="mb-4">
+        <img class="mb-2" src="{{ category.image }}" alt="" srcset="">
+        <h2 class="text-md text-pretty text-center uppercase text-flagblue">{{ category.name }}</h2>
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</div>
